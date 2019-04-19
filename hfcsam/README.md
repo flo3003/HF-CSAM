@@ -34,7 +34,7 @@ The algorithm's weight update rule is similar to SGD with momentum but with two 
 The objective is to reach a minimum of the cost function L_t with respect to the synaptic weights, and simultaneously to maximize incrementally at each epoch the following quantity:
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t=dw_t^TH_tdW_{t-1}" title="\Large \Phi_t=dw_t^TH_tdW_{t-1}" />
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t={\blm{dw}_t}^T\blm{H}_t\blm{dw}_{t-1}" title="\Large \Phi_t={\blm{dw}_t}^T\blm{H}_t\blm{dw}_{t-1}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" title="\Large \Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" />
 
 
 where <img src="https://latex.codecogs.com/svg.latex?\Large&space;dw_t" title="\Large dw_t" /> are the weight updates at the current time step, <img src="https://latex.codecogs.com/svg.latex?\Large&space;dw_t{t-1}" title="\Large dw_{t-1}" /> are the weight updates at the previous time step and <img src="https://latex.codecogs.com/svg.latex?\Large&space;dw_t{t-1}" title="\Large dw_{t-1}" /> is the Hessian of the cost function L_t.
