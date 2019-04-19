@@ -47,14 +47,15 @@ And the objective function <img src="https://latex.codecogs.com/svg.latex?\Large
 
 The learning rule can be derived by solving the following constrained optimization problem:
 
-Maximize dw_t^T * H * dW_{t-1}
+*Maximize* <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" title="\Large \Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" />
 
-subject to the constraints 
+*subject to the constraints*
 
-dw_t^T * dw_t = dP^2 and 
-       dL_t = dQ_t
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t^T\boldmath{dw}_t=(\delta{P})^2" title="\Large \boldmath{dw}_t^T\boldmath{dw}_t=(\delta P)^2" />  and <img src="https://latex.codecogs.com/svg.latex?\Large&space;d\mathcal{L}_t=\delta\mathcal{Q}_t" title="\Large d\mathcal{L}_t=\delta\mathcal{Q}_t" /> 
 
 Hence, by solving this constrained optimization problem analytically, we get the following update rule:
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}{\boldmath{G}_t}+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" title="\Large \boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}{\boldmath{G}_t}+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" /> 
 
 dw_t = - \lambda1 / (2 * \lambda2) * Gt + 1 / (2 * \lambda2) * H * dw_{t-1}
 
