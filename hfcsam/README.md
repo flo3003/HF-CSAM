@@ -33,13 +33,13 @@ The algorithm's weight update rule is similar to SGD with momentum but with two 
 
 The objective is to reach a minimum of the cost function L_t with respect to the synaptic weights, and simultaneously to maximize incrementally at each epoch the following quantity:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t=dw_t^TH_tdW_{t-1}" title="\Large \Phi_t=dw_t^TH_tdW_{t-1}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t={\blm{dw}_t}^T\blm{H}_t\blm{dw}_{t-1}" title="\Large \Phi_t={\blm{dw}_t}^T\blm{H}_t\blm{dw}_{t-1}" />
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi=dw_t^THdW_{t-1}" title="\Large \Phi=dw_t^THdW_{t-1}" />
 
-\Phi = dw_t^T * H * dW_{t-1}
- 
-where dw_t are the weight updates at the current time step, dw_{t=1} are the weight updates at the previous time step and H is the Hessian of the cost function L_t.
+where <img src="https://latex.codecogs.com/svg.latex?\Large&space;dw_t" title="\Large dw_t" /> are the weight updates at the current time step, <img src="https://latex.codecogs.com/svg.latex?\Large&space;dw_t{t-1}" title="\Large dw_{t-1}" /> are the weight updates at the previous time step and <img src="https://latex.codecogs.com/svg.latex?\Large&space;dw_t{t-1}" title="\Large dw_{t-1}" /> is the Hessian of the cost function L_t.
+
+\Phi_t\!=\!{\blm{dw}_t}^T\blm{H}_t\blm{dw}_{t-1}
 
 At each epoch t of the learning process, the vector w_t will be incremented by dw_t, so that:
 
