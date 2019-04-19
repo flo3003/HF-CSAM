@@ -7,7 +7,7 @@ This is a Hessian Free Neural Networks Training Algorithm with Curvature Scaled 
 Install via
 
     python setup.py install
-    #pip install git+https://github.com/
+    #pip install git+https://github.com/flo3003/HF-CSAM
 
 ``hfcsam`` requires a TensorFlow and Keras installation (the current code has been tested for realeases 1.6--1.8), but this is *not* currently enforced in the ``setup.py`` to allow for either the CPU or the GPU version.
 
@@ -55,21 +55,17 @@ The learning rule can be derived by solving the following constrained optimizati
 
 Hence, by solving this constrained optimization problem analytically, we get the following update rule:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}{\boldmath{G}_t}+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" title="\Large \boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}{\boldmath{G}_t}+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" /> 
-
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}\boldmath{G}_t+\frac{1}{2\lambda_2}\boldmath{H}_td\boldmath{w}_{t-1}" title="\Large \boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}\boldmath{G}_t+\frac{1}{2\lambda_2}\boldmath{H}_td\boldmath{w}_{t-1}" /> 
-dw_t = - \lambda1 / (2 * \lambda2) * Gt + 1 / (2 * \lambda2) * H * dw_{t-1}
 
-where G_t is the gradient of the network's loss/cost function L_t
+where <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{G}_t" title="\Large \boldmath{G}_t" />  is the gradient of the network's loss/cost function <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mathcal{L}_t" title="\Large \mathcal{L}_t" />.
 
 ## Feedback
 
-If you have any questions or suggestions regarding this implementation, please open an issue in [](https://github.com/). Apart from that, we welcome any feedback regarding the performance of HF-CSAM on your training problems (mail to flwra.sakketoy@gmail.com).
+If you have any questions or suggestions regarding this implementation, please open an issue in [flo3003/HF-CSAM](https://github.com/flo3003/HF-CSAM). Apart from that, we welcome any feedback regarding the performance of HF-CSAM on your training problems (mail to flwra.sakketoy@gmail.com).
 
 ## Citation
 
 If you use HF-CSAM for your research, please cite the [paper][1].
 
-[1]: https://arxiv.org/abs/
-
+[1]: A Hessian Free Neural Networks Training Algorithm with Curvature Scaled Adaptive Momentum (under review)
 
