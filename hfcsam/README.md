@@ -37,11 +37,11 @@ The objective is to reach a minimum of the cost function L_t with respect to the
 
 where <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t" title="\Large \boldmath{dw}_t" /> are the weight updates at the current time step, <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_{t-1}" title="\Large \boldmath{dw}_{t-1}" /> are the weight updates at the previous time step and <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{H}_t" title="\Large \boldmath{H}_t" /> is the Hessian of the cost function <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mathcal{L}_t" title="\Large \mathcal{L}_t" />.
 
-At each epoch t of the learning process, the vector w_t will be incremented by dw_t, so that:
+At each epoch t of the learning process, the vector <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{w}_t" title="\Large \boldmath{w}_t" />  will be incremented by <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t" title="\Large \boldmath{dw}_t" /> , so that:
 
-dw_t^T * dw_t = dP^2
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t^T\boldmath{dw}_t=(\delta P)^2" title="\Large \boldmath{dw}_t^T\boldmath{dw}_t=(\delta P)^2" /> 
 
-And the objective function L_t must be decremented by a quantity dQ_t, so that:
+And the objective function <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mathcal{L}_t" title="\Large \mathcal{L}_t" /> must be decremented by a quantity <img src="https://latex.codecogs.com/svg.latex?\Large&space;\delta\mathcal{Q}_t" title="\Large \delta\mathcal{Q}_t" />, so that:
 
 dL_t = dQ_t
 
