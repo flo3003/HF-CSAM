@@ -57,7 +57,7 @@ Hence, by solving this constrained optimization problem analytically, we get the
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}{\boldmath{G}_t}+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" title="\Large \boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}{\boldmath{G}_t}+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" /> 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}\boldmath{G}_t+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" title="\Large \boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}\boldmath{G}_t+\frac{1}{2\lambda_2}\boldmath{H}_td\blm{w}_{t-1}" /> 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}\boldmath{G}_t+\frac{1}{2\lambda_2}\boldmath{H}_td\boldmath{w}_{t-1}" title="\Large \boldmath{dw}_t=-\frac{\lambda_1}{2\lambda_2}\boldmath{G}_t+\frac{1}{2\lambda_2}\boldmath{H}_td\boldmath{w}_{t-1}" /> 
 dw_t = - \lambda1 / (2 * \lambda2) * Gt + 1 / (2 * \lambda2) * H * dw_{t-1}
 
 where G_t is the gradient of the network's loss/cost function L_t
