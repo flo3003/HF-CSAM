@@ -23,7 +23,7 @@ The ``hfcsam`` module contains the class ``HF-CSAM``, which inherits from keras 
     with tf.Session() as sess:
         sess.run([loss, step])
 
-HF-CSAM has two hyper-parameters: dP and xi. The dP parameter the step size and can vary depending on the problem. In MNIST and CIFAR datasets dP is 0.05 < δP < 0.5 and  xi should be 0.5 < xi < 0.99 (the default value ``xi=0.99`` should work for most problems).
+HF-CSAM has two hyper-parameters: dP and xi. The dP parameter the step size and can vary depending on the problem. In MNIST and CIFAR datasets dP is 0.05 < dP < 0.5 and  xi should be 0.5 < xi < 0.99 (the default value ``xi=0.99`` should work for most problems).
 
 ## Short Description of HF-CSAM
 
@@ -47,7 +47,7 @@ And the objective function <img src="https://latex.codecogs.com/svg.latex?\Large
 
 The learning rule can be derived by solving the following constrained optimization problem:
 
-*Maximize* <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" title="\Large \Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" />
+*Maximize     z* <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" title="\Large \Phi_t={\boldmath{dw}_t}^T\boldmath{H}_t\boldmath{dw}_{t-1}" />
 
 *subject to the constraints*
 
