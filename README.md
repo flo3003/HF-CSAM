@@ -6,6 +6,8 @@ This is a Hessian Free Neural Networks Training Algorithm with Curvature Scaled 
 
 Install via
 
+    git clone https://github.com/flo3003/HF-CSAM.git
+    cd HF-CSAM/hfcsam
     python setup.py install
 
 
