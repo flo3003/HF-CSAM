@@ -32,6 +32,8 @@ We give a short description of the algorithm, ignoring various details. Please r
 The algorithm's weight update rule is similar to SGD with momentum but with two main differences arising from the formulation of the training task as a constrained optimization problem: (i) the momentum term is scaled with curvature information (in the form of the Hessian); (ii) the coefficients for the learning rate and the scaled momentum term are adaptively determined.
 
 The objective is to reach a minimum of the cost function L_t with respect to the synaptic weights, and simultaneously to maximize incrementally at each epoch the following quantity:
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+
 
 \Phi = dw_t^T * H * dW_{t-1}
  
