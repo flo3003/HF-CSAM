@@ -39,11 +39,11 @@ where <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_
 
 At each epoch t of the learning process, the vector <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{w}_t" title="\Large \boldmath{w}_t" />  will be incremented by <img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t" title="\Large \boldmath{dw}_t" /> , so that:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t^T\boldmath{dw}_t=(\delta P)^2" title="\Large \boldmath{dw}_t^T\boldmath{dw}_t=(\delta P)^2" /> 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\boldmath{dw}_t^T\boldmath{dw}_t=(\delta{P})^2" title="\Large \boldmath{dw}_t^T\boldmath{dw}_t=(\delta P)^2" /> 
 
 And the objective function <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mathcal{L}_t" title="\Large \mathcal{L}_t" /> must be decremented by a quantity <img src="https://latex.codecogs.com/svg.latex?\Large&space;\delta\mathcal{Q}_t" title="\Large \delta\mathcal{Q}_t" />, so that:
 
-dL_t = dQ_t
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;d\mathcal{L}_t=\delta\mathcal{Q}_t" title="\Large d\mathcal{L}_t=\delta\mathcal{Q}_t" /> 
 
 The learning rule can be derived by solving the following constrained optimization problem:
 
