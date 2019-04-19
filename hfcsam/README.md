@@ -35,7 +35,7 @@ The objective is to reach a minimum of the cost function L_t with respect to the
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi = dw_t^T H dW_{t-1}" title="\Large \Phi = dw_t^T H dW_{t-1}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\Phi=dw_t^THdW_{t-1}" title="\Large \Phi=dw_t^THdW_{t-1}" />
 
 \Phi = dw_t^T * H * dW_{t-1}
  
