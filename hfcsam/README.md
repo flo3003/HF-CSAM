@@ -7,7 +7,6 @@ This is a Hessian Free Neural Networks Training Algorithm with Curvature Scaled 
 Install via
 
     python setup.py install
-    #pip install git+https://github.com/flo3003/HF-CSAM/hfcsam
 
 ``hfcsam`` requires a TensorFlow and Keras installation (the current code has been tested for realeases 1.6--1.8), but this is *not* currently enforced in the ``setup.py`` to allow for either the CPU or the GPU version.
 
