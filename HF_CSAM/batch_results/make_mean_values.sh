@@ -1,4 +1,6 @@
-# This script computes the average training loss, training accuracy, validation loss and validation accuraccy over the 5 splits and saves the results in a new file
+# This script computes the average training loss, training accuracy, 
+#validation loss and validation accuraccy over the 5 splits 
+#and saves the results in a new file
 
 FILES=("cnn_cifar10" "mlp_cifar10" "mlp_mnist" "cnn_mnist")
 
