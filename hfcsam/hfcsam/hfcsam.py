@@ -96,7 +96,7 @@ class HFCSAM(Optimizer):
             self.updates.append(K.update_add(self.iterations, 1))
 
         # momentum
-	shapes = [K.int_shape(p) for p in params]
+        shapes = [K.int_shape(p) for p in params]
         moments = [K.zeros(shape) for shape in shapes]
 
         self.weights = [self.iterations] + moments
@@ -114,7 +114,7 @@ class HFCSAM(Optimizer):
 
         lamda2 = 0.5*tf.sqrt((IFF*IGG-IGF*IGF)/(IGG*dP*dP-dQ*dQ))
 
-	ccond=K.greater(IGF,0.0)
+        ccond=K.greater(IGF,0.0)
 
         lamda1=K.switch(ccond,(-2*lamda2*dQ+IGF)/IGG, (2*lamda2*dQ+IGF)/IGG)
 
